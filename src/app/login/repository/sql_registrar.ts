@@ -1,6 +1,6 @@
 export const SQL_Usuario = {
   CREAR_USUARIO:
-    "INSERT INTO usuarios(nombres_usuarios, apellidos_usuarios) VALUES \
+    "INSERT INTO usuarios(nombres_usuario, apellidos_usuario) VALUES \
   ($1, $2) RETURNING cod_usuario",
   CREAR_ACCESO:
     "INSERT INTO accesos(cod_usuario, correo_acceso, clave_acceso, uuid_acceso) \

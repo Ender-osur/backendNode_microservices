@@ -1,6 +1,7 @@
 import cors from "cors"; // Cross-Origin-Resource-Sharing
 import morgan from "morgan"; // Pitarita
 import express from "express";
+import rutaUsuarioApi from "../../app/login/route/RutaUsuario";
 
 class Server {
   public app: express.Application;
@@ -20,7 +21,7 @@ class Server {
   }
 
   public loadRoutes(): void {
-    // this.app.use("/api/register", ruteoRegister);
+    this.app.use("/api/user", rutaUsuarioApi);
     // this.app.use("/api/login", ruteoLogin);
   }
 

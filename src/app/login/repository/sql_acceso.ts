@@ -4,7 +4,7 @@ export const SQL_Acceso = {
   hora_ingreso) VALUES ($1, CURRENT_DATE, CURRENT_TIME)",
   DATOS_TOKEN:
     "SELECT a.cod_usuario, u.nombres_usuario,\
-  u.apellidos_usuario, a.clave_usuario, a.correo_acceso, \
+  u.apellidos_usuario, a.clave_acceso, a.correo_acceso, \
   a.uuid_acceso \
   FROM accesos a INNER JOIN usuarios u ON \
   a.cod_usuario = u.cod_usuario \
